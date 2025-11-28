@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "reserva-livros",
+  "private_key_id": "b57edfbf50469f6dd495a70c89c13ff033ab9bd3",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDTs99lvO5G4r1V\nsUkF2F7lCWZOJxHZMVTF560OP0z29amsbUKHelDTUVfP2mUi6mMBGuTDYUtpALGf\n6sZL/swDQwMVqHa3zqlXCCUnoxIzIPxHiEbRAPy1CZ0AiLz5Y4UKNYM3WjsNTRi0\nAMGKyAR60neKs4blJ/E2KkFAdaF57rAE7HbBhd7wf8cdQmWdbusbqqXzk/E6hc1N\nIUubqHOfa3FI1MMdfGwG6qIuhjuvo9VOO5H+B+/5D/ieoYGGQCV2PH0iSA5bso1T\nR+DB3bWafC1Ih10hIBerhqw3vV851MXrMbnd4kJEsoRoy2MV1yXtgkdyU319GWy1\nnqiAFoy/AgMBAAECggEAXOKOUXKgLyzbuqXy7qQdGqvRndepjpyE3+JC/T3L1I07\n2WIE7zE9FkKZ3yIo/rVNJBZ7KbheIF+ED7CwOXa9Z273AwEruYDsrrltp+L2IMXH\nutDxlVE0D3B82Nel5lwCatTI0jf+MdtSS+QLBwu0X3lJpusW9CNew4+tmo0iAL9r\nZHIvD0mdj+HmzWancOLpt2yYPGqf7F+43KMvxNTE51ptWhBOm/51Ajrp5kpk3uSL\nmCuQPgJczOT71S1szOi9rOCV/DzMGbVIWoWKEwjilDWbb5i9FX32U0SoEVkgqSD6\nAftW0uBfKweKpl2yK+DIt6AoHGY9FYws+1o7u6BvOQKBgQDqDQrLIlIOSRcPNWfK\ns3Cc9IB/6JCv9ZXMMFi4+VLTbGrjfOatJeX0mOhkj5xyTQuaVseY7xWbaCdNRE9a\nI2ZFrfCQSsaQFJp8y6ABgzpuySLDkGFQWAgzk5DNoCTG4Z9WJxu46gmVJsfrFkXA\nDk7OSx+OHH5yNuDR4hKacPNTxwKBgQDnjk4fJr1Klr0UxQs0DId8TGcmdPfPx2VK\nLiOtdECgRhiXDSJDtTTs/LOYZd1saLYzxosRY7cUE0EmOt5yYbPEzQtCgM+QkZu6\n1PF4z6LZKMQGSO1KwKKWWLPviNHj1bry0oBOhaTVfPnP/eRUDPfeaHWuQm8a+Nxs\nX/wdmt0PSQKBgExBA4s7G1DcL08dLzuzSrVYU6VYuAscEDn+ZmmdkYaghBKp1t4C\nwvD2AIEC6Q20XFtkepMxEfEX9fYOk2virKd3DDF2q0q1679M+EyF3LvLfDALEimD\nBOkI4tybmF/Tkn4XL8kHNygJAoltMDxqbPJ5N0atseS0THsVFMqMkjpxAoGBAJ5a\n2Jw/LwbajZatpprC0skzqvtG1M6Y63FOmoGd1jCFn311svAg9X/41Y2sZEAmYCyK\nZELRMbwd6tkNO2F35av6GfAyDUEuAxVDWZwoS5M9aMlviDAuC0LMiMmQhRHN8drs\nEGkixnZl0KXoWQUOFVlZkNlKf5cvh/bpsY5BgVpZAoGAM7P0BjBBxL64tF+7QNQM\nKQqrRBEF8ekmwBL22nc0PUbUWqtx7+pP1LL7clpy+DTh3EPG/a04nSAfcC5L6lqU\nsHoCwaPNT8WRzLTgKvnDS74gRIY2sj351TRYiFIT9GeiVkkB/Yk0O+lpGUaKve2b\nMh24pyJU073Iha5g55q+J4Q=\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-fbsvc@reserva-livros.iam.gserviceaccount.com",
+  "client_id": "109035316523963444640",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-fbsvc%40reserva-livros.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
