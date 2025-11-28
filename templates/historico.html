@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block title %}Histórico{% endblock %}
+{% block content %}
+<h2>Histórico de Empréstimos</h2>
+{% for item in historico %}
+  <div class="historico-item">
+    <img src="{{ item.imagem }}" alt="Capa do Livro">
+    <div>
+      <strong>{{ item.titulo }}</strong><br>
+      📅 Empréstimo: {{ item.data_emprestimo }}<br>
+      ⏳ data para a Devolução: {{ item.data_devolucao }}
+    </div>
+  </div>
+{% endfor %}
+{% endblock %}

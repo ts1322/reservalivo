@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+{% block title %}Livros{% endblock %}
+{% block content %}
+
+<h2>Lista de Livros</h2>
+
+{% with messages = get_flashed_messages(with_categories=true) %}
+  {% if messages %}
+    <ul class="flashes">
+      {% for category, message in messages %}
+        <li class="{{ category }}">{{ message }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+{% endwith %}
+
+<ul>
+  {% for livro in livros %}
+  <li>
+    <div class="livro-card" onclick="abrirModal('{{ loop.index }}')">
+      <img src="{{ livro.imagem }}" alt="Capa do Livro">
+      <h3>{{ livro.titulo }}</h3>
+      <span class="{{ 'disponivel' if livro.disponivel and livro.estoque > 0 else 'indisponivel' }}">
+        {{ 'Disponível' if livro.disponivel and livro.estoque > 0 else 'Indisponível' }}
+      </span>
+    </div>
+
+
+    <div id="modal-{{ loop.index }}" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="fecharModal('{{ loop.index }}')">&times;</span>
+
+        <h2>{{ livro.titulo }}</h2>
+        <img src="{{ livro.imagem }}" alt="Capa do Livro" style="max-width: 150px;">
+        <p><strong>Autor:</strong> {{ livro.autor }}</p>
+        <p><strong>Resumo:</strong> {{ livro.resumo }}</p>
+        <p><strong>Páginas:</strong> {{ livro.paginas }}</p>
+        <p><strong>Ano:</strong> {{ livro.ano }}</p>
+        <p><strong>Estoque:</strong> {{ livro.estoque }}</p>
+        <p><strong>Avaliação:</strong> {{ livro.avaliacao }} ⭐</p>
+
+        <p><strong>Disponibilidade:</strong>
+          {{ 'Disponível' if livro.disponivel and livro.estoque > 0 else 'Indisponível' }}
+        </p>
+        <form method="post" action="{{ url_for('livros_view') }}">
+          <input type="hidden" name="livro" value="{{ livro.doc_id }}">
+
+          {% if usuario and livro.reservado_por == usuario %}
+              <button type="submit" name="acao" value="cancelar">Cancelar Reserva</button>
+              <button type="submit" name="acao" value="devolver">Devolver Livro</button>
+          {% else %}
+              {% if livro.disponivel and livro.estoque > 0 %}
+                  <button type="submit" name="acao" value="reservar">Reservar</button>
+              {% else %}
+                  <button type="button" disabled>Indisponível</button>
+              {% endif %}
+          {% endif %}
+        </form>
+
+      </div>
+    </div>
+
+  </li>
+  {% endfor %}
+</ul>
+
+
+
+<script>
+  function abrirModal(id) {
+    document.getElementById('modal-' + id).style.display = 'block';
+  }
+
+  function fecharModal(id) {
+    document.getElementById('modal-' + id).style.display = 'none';
+  }
+
+  window.onclick = function(event) {
+    const modals = document.getElementsByClassName('modal');
+    for (let m of modals) {
+      if (event.target == m) {
+        m.style.display = "none";
+      }
+    }
+  }
+</script>
+
+{% endblock %}
