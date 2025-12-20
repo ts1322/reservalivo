@@ -1,0 +1,163 @@
+:root {
+  --bg: #ECE9D8;
+  --card: #FFFFFF;
+  --accent: #0A246A;
+  --accent-light: #3A6EA5;
+  --border-dark: #404040;
+  --border-light: #FFFFFF;
+  --border-mid: #808080;
+  --muted: #4f4f4f;
+}
+
+/* RESET */
+* {
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: Tahoma, "MS Sans Serif", Verdana, Arial, sans-serif;
+  background: var(--bg);
+  margin: 0;
+  padding: 20px;
+  color: #000;
+  cursor: default;
+}
+
+/* HEADER – barra azul XP */
+header {
+  max-width: 900px;
+  margin: 0 auto 20px;
+  background: linear-gradient(to bottom, #0A246A, #3A6EA5);
+  color: #fff;
+  padding: 10px 12px;
+  border: 2px solid var(--border-dark);
+  border-right-color: var(--border-light);
+  border-bottom-color: var(--border-light);
+  font-weight: bold;
+  font-size: 14px;
+  text-shadow: 1px 1px #000080;
+}
+
+/* TEXTO AUXILIAR */
+.muted {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+/* CARDS – janelas XP */
+.card {
+  background: var(--card);
+  padding: 12px;
+  border: 2px solid var(--border-mid);
+  border-top-color: var(--border-light);
+  border-left-color: var(--border-light);
+  box-shadow: inset 1px 1px #fff;
+}
+
+/* INPUTS E SELECT */
+input,
+select {
+  width: 100%;
+  padding: 4px 6px;
+  margin-top: 6px;
+  font-family: Tahoma, Verdana, sans-serif;
+  font-size: 13px;
+  background: #fff;
+  border: 2px solid var(--border-mid);
+  border-top-color: var(--border-dark);
+  border-left-color: var(--border-dark);
+}
+
+/* BOTÕES – estilo clássico XP */
+button {
+  width: 100%;
+  padding: 6px;
+  margin-top: 8px;
+  font-family: Tahoma, Verdana, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  background: linear-gradient(to bottom, #FFFFFF, #D4D0C8);
+  border: 2px solid var(--border-mid);
+  border-top-color: var(--border-light);
+  border-left-color: var(--border-light);
+  cursor: pointer;
+}
+
+button:hover {
+  background: linear-gradient(to bottom, #FFFFFF, #CFCBBE);
+}
+
+button:active {
+  border: 2px solid var(--border-dark);
+  border-top-color: var(--border-mid);
+  border-left-color: var(--border-mid);
+  background: #D4D0C8;
+}
+
+/* LISTAS */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  padding: 6px;
+  background: #ECE9D8;
+  border: 2px solid var(--border-mid);
+  border-top-color: var(--border-light);
+  border-left-color: var(--border-light);
+  margin-bottom: 6px;
+  font-size: 13px;
+}
+
+/* TEXTO PISCANDO (bem anos 2000 😅) */
+.blink {
+  color: red;
+  font-weight: bold;
+  animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+/* GIF CANTINHO */
+.gif-corner {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 9999;
+}
+
+/* RESPONSIVO */
+@media (max-width: 900px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* FOOTER – barra inferior estilo janela */
+footer {
+  max-width: 900px;
+  margin: 20px auto 0;
+  padding: 8px;
+  background: #ECE9D8;
+  border: 2px solid var(--border-mid);
+  border-top-color: var(--border-light);
+  border-left-color: var(--border-light);
+  font-family: Tahoma, Verdana, Arial, sans-serif;
+  font-size: 12px;
+  color: #000;
+  text-align: center;
+}

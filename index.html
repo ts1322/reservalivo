@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sistema de Reservas </title>
+<link rel="stylesheet" href="styles.css" />
+
+</head>
+<body>
+<center><p class="blink">⚠️ ATENÇÃO: SISTEMA EXPERIMENTAL ⚠️</p></center>
+
+<header>
+  <img src="https://media.giphy.com/media/l0MYC0LajbaPoEADu/giphy.gif" width="32">
+  Sistema de Reservas
+  <span class="muted">versão 1.0</span>
+</header>
+
+<h2>Cadastrar Usuário</h2>
+<form id="form-usuario">
+<input type="text" name="nome" placeholder="Nome" required>
+<input type="email" name="email" placeholder="Email" required>
+<button>Cadastrar</button>
+</form>
+<ul id="lista-usuarios"></ul>
+
+
+<hr>
+
+
+<h2>Cadastrar Livro</h2>
+<form id="form-livro">
+<input type="text" name="titulo" placeholder="Título" required>
+<input type="text" name="autor" placeholder="Autor" required>
+<button>Cadastrar</button>
+</form>
+<ul id="lista-livros"></ul>
+
+
+<hr>
+
+
+<h2>Reservar Livro</h2>
+<form id="form-reserva">
+<select id="select-usuario" name="usuario"></select>
+<select id="select-livro" name="livro"></select>
+<button>Reservar</button>
+</form>
+
+
+<ul id="lista-reservas"></ul>
+
+
+<script type="module" src="./main.js"></script>
+
+<footer style="margin-top:20px;font-family:Tahoma;font-size:12px;">
+  © 2004 - Sistema de Reservas <br>
+  Melhor visualizado no Internet Explorer 6
+<span class="blink">xD</span>
+
+</footer>
+
+</body>
+</html>
